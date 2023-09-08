@@ -1,7 +1,19 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  text-align: center;
+}
+
 .modal {
   border: 1px solid #000;
-  width: 500px;
+  width: 90vw;
   height: 500px;
+  max-width: 500px;
+  max-height: 500px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -12,8 +24,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 999;
+  background-color: #fff;
 }
-
+.not-active {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .active-modal {
   display: flex;
 }
